@@ -25,9 +25,6 @@ function onTextareaInput(e) {
   formData[e.target.name] = e.target.value;
   const stringifiedData = JSON.stringify(formData);
   localStorage.setItem(STORAGE_KEY, stringifiedData);
-  if (localStorage.length > 0) {
-  formData.email = savedMessage.email; formData.message = savedMessage.message;
-} 
 }
 
 function populateTextarea() {
