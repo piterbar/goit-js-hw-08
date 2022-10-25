@@ -40,7 +40,5 @@ function populateTextarea() {
       return;
     }
   }
-  refs.textarea.value = savedMessage['message'] || '';
-  refs.input.value = savedMessage['email'] || '';
 }
-//test branch load 
+//test branch load 4
