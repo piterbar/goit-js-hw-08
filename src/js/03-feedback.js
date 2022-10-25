@@ -38,9 +38,8 @@ function populateTextarea() {
   else if (savedMessage === 0) {
     
     return;
-
+  }
     refs.textarea.value = savedMessage['message'] || '';
     refs.input.value = savedMessage['email'] || '';
-  }
 }
-//test branch load 11
+//test branch load 12
