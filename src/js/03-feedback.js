@@ -34,14 +34,13 @@ function populateTextarea() {
   if (localStorage.length > 0) {
     formData.email = savedMessage.email;
     formData.message = savedMessage.message;
-  } 
-  if (savedMessage === 0) {
+  }
+  else if (savedMessage === 0) {
     
     return;
 
+    refs.textarea.value = savedMessage['message'] || '';
+    refs.input.value = savedMessage['email'] || '';
   }
-  refs.textarea.value = savedMessage['message'] || '';
-  refs.input.value = savedMessage['email'] || '';
 }
-
-//test branch load 10
+//test branch load 11
