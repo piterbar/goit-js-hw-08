@@ -34,12 +34,12 @@ function populateTextarea() {
   if (localStorage.length > 0) {
     formData.email = savedMessage.email;
     formData.message = savedMessage.message;
-    
-    if (savedMessage === null) {
+    }  
+    else if (savedMessage === null) {
     
       return;
     }
-  }
+  
   refs.textarea.value = savedMessage['message'] || '';
   refs.input.value = savedMessage['email'] || '';
 }
