@@ -10,8 +10,6 @@ const refs = {
 };
 const formData = {};
 
-populateTextarea();
-
 refs.form.addEventListener('input', throttle(onTextareaInput, 500));
 
 refs.form.addEventListener('submit', e => {
