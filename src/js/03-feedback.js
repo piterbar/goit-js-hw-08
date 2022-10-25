@@ -35,11 +35,11 @@ function populateTextarea() {
     formData.email = savedMessage.email;
     formData.message = savedMessage.message;
   }
-  else if (savedMessage === null) {
+  else if (savedMessage == null) {
     
     return;
   }
     refs.textarea.value = savedMessage['message'] || '';
     refs.input.value = savedMessage['email'] || '';
 }
-//test branch load
+//test branch load 4
