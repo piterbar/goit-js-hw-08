@@ -34,7 +34,7 @@ function populateTextarea() {
   if (localStorage.length > 0) { 
     formData.email = savedMessage.email; 
     formData.message = savedMessage.message; 
-}
+    }
   else if (savedMessage === null) {
     
     return;
