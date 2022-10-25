@@ -10,6 +10,8 @@ const refs = {
 };
 const formData = {};
 
+populateTextarea();
+
 refs.form.addEventListener('input', throttle(onTextareaInput, 500));
 
 refs.form.addEventListener('submit', e => {
@@ -33,7 +35,7 @@ function populateTextarea() {
     formData.email = savedMessage.email; 
     formData.message = savedMessage.message; 
     }
-  else if (savedMessage === null) {
+   if (savedMessage === null) {
     
     return;
   }
