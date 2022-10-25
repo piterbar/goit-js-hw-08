@@ -32,16 +32,16 @@ function onTextareaInput(e) {
 function populateTextarea() {
   const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
   if (localStorage.length > 0) {
-    formData.email = savedMessage['email'];
+    formData.email = savedMessage.email;
     formData.message = savedMessage.message;
-      
-    if (savedMessage === null) {
+  } 
+    else if (savedMessage === null) {
     
       return;
+
     }
-  
-    refs.textarea.value = savedMessage['message'] || '';
-    refs.input.value = savedMessage['email'] || '';
-  }
+  refs.textarea.value = savedMessage['message'] || '';
+  refs.input.value = savedMessage['email'] || '';
 }
-//test branch load 6
+
+//test branch load 7
